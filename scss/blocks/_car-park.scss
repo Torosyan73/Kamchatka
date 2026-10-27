@@ -1,0 +1,102 @@
+.car-park {
+    padding: 80px 0;
+}
+
+.car-park__header {
+    margin-bottom: 60px;
+}
+
+.car-park__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.car-park__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.car-park__item {
+    padding: 10px;
+    border: 1px solid #32566f;
+    color: #32566f;
+    cursor: pointer;
+
+    &--active {
+        font-weight: 700;
+        color: #fff;
+        background-color: #32566f;
+    }
+}
+
+.car-park__content {
+    &--hidden {
+        display: none;
+    }
+}
+
+.car-park__content-slider .swiper-slide {
+    border-radius: 6px;
+    height: 330px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .car-park {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .car-park {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .car-park__list {
+        gap: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .car-park__header {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-park__list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 690px) {
+    .car-park__list {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        text-align: left;
+    }
+
+    .car-park__item {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 610px) {
+    .car-park__content-slider .swiper-slide {
+        height: 300px;
+    }
+}
